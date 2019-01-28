@@ -3,22 +3,21 @@ let mix = require('laravel-mix');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
- |--------------------------------------------------------------------------
- |
+  |
  | Mix provides a clean, fluent API for defining some Webpack build steps
  | for your Laravel application. By default, we are compiling the Sass
  | file for your application, as well as bundling up your JS files.
  |
  */
 
-mix.js('src/app.js', 'dist/').sass('src/app.scss', 'dist/');
+mix.js('src/index.js', 'dist/').sass('src/app.scss', 'dist/');
 
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
 // mix.preact(src, output); <-- Identical to mix.js(), but registers Preact compilation.
 // mix.coffee(src, output); <-- Identical to mix.js(), but registers CoffeeScript compilation.
-// mix.ts(src, output); <-- TypeScript support. Requires tsconfig.json to exist in the same folder as webpack.mix.js
+// mix.ts(src, output); <--  TypeScript support. Requires tsconfig.json to exist in the same folder as webpack.mix.js
 // mix.extract(vendorLibs);
 // mix.sass(src, output);
 // mix.less(src, output);
